@@ -1,0 +1,9 @@
+:root {
+  --footer-bg: #e2beff;
+  --link-article: #e2beff;
+}
+
+[data-colored="true"] {
+  --footer-bg: #f8d5c3;
+  --link-article: #f8d5c3;
+}

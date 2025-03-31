@@ -1,75 +1,41 @@
-# Nuxt Minimal Starter
+# QTIM Blog – Nuxt 3 Test Task
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This project is a test assignment implemented using **Nuxt 3** and **TypeScript**. It is a simple blog application that demonstrates working with layouts, dynamic routing, API integration, pagination, and responsive UI.
 
-## Setup
+## 🛠 Stack
 
-Make sure to install dependencies:
+- [Nuxt 3](https://nuxt.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Composition API
+- Native Fetch API (no Axios)
+- Optional: `@nuxt/image` for optimization
+
+## 📦 Features
+
+- Blog layout based on Figma design
+- Responsive article grid
+- Dynamic routing: `/blog/[id]`
+- Safe type guards for validating API data
+- Custom pagination (5 buttons per group + arrows)
+- Hover effects and reveal animations
+- Fallback placeholder when an image fails to load
+- Fully reusable components: `Typography`, `Pagination`, `ArticleCard`, etc.
+- Font: TT Commons (locally hosted)
+
+## 📦 Installation
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
+# or
 yarn install
-
-# bun
-bun install
+# or
+pnpm install
 ```
 
-## Development Server
+📡 API Used
+All Articles
+https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work/posts/
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Single Article by ID
+https://6082e3545dbd2c001757abf5.mockapi.io/qtim-test-work/posts/:id

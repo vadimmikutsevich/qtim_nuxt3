@@ -45,7 +45,7 @@ const hasError = ref(false);
           component="span"
           variant="body_20_loose"
           :to="`/articles/${article.id}`"
-          class="text-purple-lavender cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          class="text-[var(--link-article)] cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
           Read more
         </Typography>

@@ -26,10 +26,21 @@ const offices = [
 
 const socialLeft = ["Facebook", "Instagram", "Telegram"];
 const socialRight = ["Behance", "LinkedIn", "Privacy Policy"];
+
+function toggleColorTheme() {
+  const root = document.documentElement;
+  const isColored = root.dataset.colored === "true";
+
+  if (isColored) {
+    delete root.dataset.colored;
+  } else {
+    root.dataset.colored = "true";
+  }
+}
 </script>
 
 <template>
-  <footer class="bg-purple-lavender text-black-deep max-xl:px-4">
+  <footer class="bg-[var(--footer-bg)] text-black-deep max-xl:px-4">
     <div class="max-w-[1218px] mx-auto w-full flex flex-col min-h-screen">
       <div class="flex grow">
         <div class="pt-[140px] w-full max-w-[464px]">
@@ -110,9 +121,15 @@ const socialRight = ["Behance", "LinkedIn", "Privacy Policy"];
         </div>
 
         <div
-          class="w-[358px] h-[179px] bg-black text-white flex items-end justify-center rounded-t-full"
+          class="group w-[358px] h-[179px] bg-black text-white flex items-end justify-center rounded-t-full cursor-pointer transition-transform duration-200 active:scale-95"
+          @click="toggleColorTheme"
         >
-          <Typography class="mb-[25px]" variant="heading_32">Go</Typography>
+          <Typography
+            class="mb-[25px] transition-opacity duration-200 group-active:opacity-70"
+            variant="heading_32"
+          >
+            Go
+          </Typography>
         </div>
 
         <div class="flex gap-x-8 items-center mb-[30px]">
