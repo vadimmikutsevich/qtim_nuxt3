@@ -45,7 +45,7 @@ function goToArticle(id: string) {
     <Typography variant="heading_84">Articles</Typography>
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 mt-[38px]"
     >
       <ArticleCard
         v-for="article in paginated"
