@@ -2,6 +2,11 @@
 
 This project is a test assignment implemented using **Nuxt 3** and **TypeScript**. It is a simple blog application that demonstrates working with layouts, dynamic routing, API integration, pagination, and responsive UI.
 
+## 🔗 Live Preview
+
+🟢 Available at:  
+👉 [https://qtim-nuxt3.vercel.app/](https://qtim-nuxt3.vercel.app/)
+
 ## 🛠 Stack
 
 - [Nuxt 3](https://nuxt.com/)
